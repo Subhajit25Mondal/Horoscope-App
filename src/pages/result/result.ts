@@ -19,12 +19,10 @@ export class ResultPage {
   time: String;
   img: String;
 
-  constructor(private navCtrl: NavController, private navParams: NavParams) {
-    this.name
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    console.log(this.navParams.get);
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ResultPage');
-  }
+  
 
 }
