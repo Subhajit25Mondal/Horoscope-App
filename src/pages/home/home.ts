@@ -27,6 +27,7 @@ export class HomePage {
       { name : 'Capricorn', date : 'Dec 22 - Jan 19', img : 'Capricorn.png'},
       { name : 'Aquarius', date : 'Jan 20 - Feb 18', img : 'Aquarius.png'},  
       { name : 'Pisces', date : 'Feb 19 - Mar 20', img : 'Pisces.png'}];
+
 }
 
 openAbout() {
