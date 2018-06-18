@@ -44,4 +44,5 @@ openResults(name :String) {
   this.navCtrl.push(ResultPage,name);
 }
 
+
 }
