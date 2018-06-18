@@ -17,33 +17,17 @@
 </ion-fab>
 </ion-content>
 
-<!--<ion-content>
-<ion-list>
-<button ion-item no-lines padding margin round color="primary" (click)="openAbout()">
- 
-    <ion-thumbnail item-start>
-      <img src="../../assets/icon/Leo.png" >
-    </ion-thumbnail>
-    <h2>Ruby</h2>
-  
-</button>
-</ion-list>
 
-</ion-content>-->
-<ion-content padding>
-  <ion-scroll style="height: 1000px">
-<ion-list no-lines>
-    <button ion-item *ngFor="let item of items" (click)="openResults(item)">
+<ion-content>
+  <ion-list no-lines>
+    <ion-item *ngFor="let item of items">
         <ion-thumbnail item-start>
             <img src="../../assets/icon/{{item.img}}">
-          </ion-thumbnail>
+        </ion-thumbnail>
       {{ item.name }} <h6>{{item.date}}</h6>
-    </button> 
+      <button ion-button clear item-end (click)="openResults(item.name)">View</button>
+        </ion-item> 
   </ion-list>
-</ion-scroll>
 </ion-content>
 
 
-<ion-content padding>
-
-</ion-content>
