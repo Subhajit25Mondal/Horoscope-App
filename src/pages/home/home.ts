@@ -42,9 +42,9 @@ openContact() {
 
 openResults(name : String, date : String, img : String) {
   this.navCtrl.push(ResultPage,{
-    symbol : name,
-    duration : date,
-    image : img
+    'symbol' : name,
+    'duration' : date,
+    'image' : img
   });
 }
 

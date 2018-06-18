@@ -20,7 +20,9 @@ export class ResultPage {
   img: String;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    console.log(this.navParams.get);
+    this.name = this.navParams.get('symbol');
+    this.time = this.navParams.get('duration');
+    this.img = this.navParams.get('image');
   }
 
   
