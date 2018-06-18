@@ -17,9 +17,9 @@
 </ion-fab>
 </ion-content>
 
-<ion-content>
-
-<button ion-item padding margin (click)="openAbout()">
+<!--<ion-content>
+<ion-list>
+<button ion-item no-lines padding margin round color="primary" (click)="openAbout()">
  
     <ion-thumbnail item-start>
       <img src="../../assets/icon/Leo.png" >
@@ -27,9 +27,17 @@
     <h2>Ruby</h2>
   
 </button>
+</ion-list>
 
-
+</ion-content>-->
+<ion-content padding>
+<ion-list no-lines>
+    <button ion-item *ngFor="let item of items" (click)="openResults(item)">
+      {{ item.name }}
+    </button> 
+  </ion-list>
 </ion-content>
+
 
 <ion-content padding>
 
