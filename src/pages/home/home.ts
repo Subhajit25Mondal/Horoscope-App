@@ -13,7 +13,7 @@ export class HomePage {
   items : any[];
 
 
-  constructor(public navCtrl: NavController) {
+  constructor(private navCtrl: NavController) {
 
     this.items=[{ name : 'Aries', date: 'Mar 21 - Apr 19', img : 'Aries.png'},
       { name : 'Taurus', date : 'Apr 20 - May 20', img : 'Taurus.png'},
@@ -40,8 +40,12 @@ openContact() {
     this.navCtrl.push(ContactPage);
 }
 
-openResults(name :String) {
-  this.navCtrl.push(ResultPage,name);
+openResults(name : String, date : String, img : String) {
+  this.navCtrl.push(ResultPage,{
+    symbol : name,
+    duration : date,
+    image : img
+  });
 }
 
 

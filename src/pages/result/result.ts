@@ -15,7 +15,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ResultPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  name: String;
+  time: String;
+  img: String;
+
+  constructor(private navCtrl: NavController, private navParams: NavParams) {
+    this.name
   }
 
   ionViewDidLoad() {
