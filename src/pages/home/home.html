@@ -1,38 +1,14 @@
 <ion-header>
-
-  <ion-navbar color="primary">
-    <ion-title>Dashboard</ion-title>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
-<ion-content>
-<ion-fab top right edge>
-  <button ion-fab mini color="secondary"><ion-icon name="add"></ion-icon></button>
-  <ion-fab-list>
-    <button ion-fab (click)="openContact()"><ion-icon name="contact"></ion-icon></button>
-    <button ion-fab (click)="openAbout()"><ion-icon name="apps"></ion-icon></button>
-  </ion-fab-list>
-</ion-fab>
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
 </ion-content>
-
-
-
-
-<ion-content>
-  <ion-list no-lines>
-    <ion-item padding-top *ngFor="let item of items">
-        <ion-thumbnail item-start>
-            <img src="../../assets/icon/{{item.img}}">
-        </ion-thumbnail>
-
-      <h3>{{ item.name | uppercase }}</h3> <p>{{item.date}}</p>
-      
-      <button (click)="openResults(item.name, item.date, item.img)" ion-fab mini color="primary" item-end><ion-icon name="arrow-forward"></ion-icon></button>
-      <!--<button ion-button clear item-end (click)="openResults(item.name)"><ion-icon name="arrow-dropright-circle"></ion-icon></button>-->
-        </ion-item> 
-  </ion-list>
-</ion-content>
-
-
