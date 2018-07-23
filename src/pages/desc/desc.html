@@ -1,18 +1,45 @@
-<!--
-  Generated template for the DescPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>desc</ion-title>
+    <ion-title><div class="capitalize">{{name}}</div></ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="backgr">
+
+<ion-card>
+  <p class="name" padding-top padding-right padding-left><b>TODAY</b></p>
+  <p padding-left padding-right class="date">{{date}}</p>
+  <p class="content" padding>
+    {{horo}}
+  </p>
+</ion-card>
+
+
+<br>
+
+
+<ion-card color="primary">
+  <p class="name" padding-top padding-right padding-left><b>THIS WEEK</b></p>
+  <p padding-left padding-right class="date">{{date1}}</p>
+  <p class="content" padding>
+    {{horo1}}
+  </p>
+</ion-card>
+
+
+<br>
+
+
+<ion-card color="dark">
+  <p class="name" padding-top padding-right padding-left><b>THIS MONTH</b></p>
+  <p padding-left padding-right class="date">{{date2}}</p>
+  <p class="content" padding>
+    {{horo2}}
+  </p>
+</ion-card>
 
 </ion-content>

@@ -1,3 +1,28 @@
 page-desc {
+    .backgr {
+        background: url("../assets/imgs/backgr.png") no-repeat fixed center;
+        //background: #2D4989;
+        background-size: cover;
+      }
 
+      ion-card {
+        border-top: 2px solid colorofyourchoice!important ;
+        border-radius : 20px!important ;
+     }
+
+     .name {
+         font-family: Roboto;
+         font-size: 20px;
+         text-transform : capitalize;
+     }
+
+     .date {
+        font-family: Roboto;
+         font-size: 16px;
+     }
+
+     .content {
+        font-family: Roboto;
+        font-size: 18px;
+     }
 }
