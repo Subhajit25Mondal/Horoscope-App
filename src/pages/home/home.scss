@@ -23,4 +23,13 @@ page-home {
         font-family: Roboto;
         text-align: center;
     }
+
+    .backgr {
+        background: url("../assets/imgs/backgr.png") no-repeat fixed center;
+        //background: #2D4989;
+        background-size: cover;
+      }
+
+      
+
 }
