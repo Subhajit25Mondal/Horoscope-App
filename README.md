@@ -3,7 +3,7 @@ Horoscope is an Android app that provides accurate horoscope each day , every mo
 
 # Quick Links
  1. [Screenshots](#screenshots)
- 2. [Setup in local PC](#setup-in-local-PC)
+ 2. [Setup in local PC](#setup-in-local-pc)
  3. [Contribute](#contribute)
  4. [License](#license)
  
